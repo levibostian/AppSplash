@@ -1,14 +1,52 @@
 body {
     background-color: black;
     color: white;
-}
-.roboto {
     font-family: 'Roboto', sans-serif;
 }
-h1.roboto {
+h1 {
     font-size: 4em;
+}
+.website-header {
+    background-color: black;
+}
+.app-header {
+    background-image: url('img/header-background.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
 }
 .inline-text {
     display: inline-block;
     vertical-align: middle;
+}
+.description-header {
+    font-size: 3em;
+}
+.description {
+    font-size: 1.5em;
+}
+.app-screenshot-container {
+    height: 500px;
+    top: -100px;
+    left: -20px;
+    z-index: 100;
+}
+.center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+.social-button {
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    -moz-border-radius:75px;
+    -webkit-border-radius:75px;
+    display: inline-block;
+}
+.icon {
+    font-size:32px;
+    line-height:55px;
+}
+.white {
+    color: white;
 }
