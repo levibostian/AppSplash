@@ -24,10 +24,12 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-offset-1 col-md-6 center-vertical">
-            <h2 class="description-header">App for people to do stuff.</h2>
-            <p class="description">Dr. Jimmy Brungus forgot to do rockets. Hippie Joel tastes like cow bathroom. Not for horses. No lonely times just dreams you turkey. Stop, drop and roll bones made from stuff your muscles don't like. Check the expiration date used to love pruppets. </p>
+        <div class="row"> 
+          <div class="col-md-offset-1 col-md-6 center-table">
+            <div class="center-table-cell">
+              <h2 class="description-header">App for people to do stuff.</h2>
+              <p class="description">Dr. Jimmy Brungus forgot to do rockets. Hippie Joel tastes like cow bathroom. Not for horses. No lonely times just dreams you turkey. Stop, drop and roll bones made from stuff your muscles don't like. Check the expiration date used to love pruppets. </p>
+            </div>
           </div>
           <div class="col-md-4 app-screenshot-container">
             <img alt="app screenshot" src="img/app-screenshot.png" height="700px"/>
@@ -35,19 +37,29 @@
         </div>
       </div>
 
-      <div class="row" style="background:white;">
-        <div class="col-md-offset-9 col-md-3">
-          <a href="#" class="white">
-            <div class="social-button" style="background:#3b5998;">
-              <i class="fa fa-facebook fa-4x icon"></i>
+      <div class="row connect-row">
+        <div class="container">
+          <div class="col-md-offset-6 col-md-6">
+            <div class="center-block">
+              <a href="#" class="white">
+                <div class="social-button facebook">
+                  <i class="fa fa-facebook fa-4x icon"></i>
+                </div>
+              </a>
+              
+              <a href="#" class="white">
+                <div class="social-button twitter" href="#">
+                  <i class="fa fa-twitter fa-4x icon"></i>
+                </div>
+              </a>
+
+              <a href="#" class="white">
+                <div class="social-button instagram" href="#">
+                  <i class="fa fa-instagram fa-4x icon"></i>
+                </div>
+              </a>
             </div>
-          </a>
-          
-          <a href="#" class="white">
-            <div class="social-button" href="#" style="background:#4099FF">
-              <i class="fa fa-twitter fa-4x icon"></i>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

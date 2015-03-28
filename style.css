@@ -30,23 +30,65 @@ h1 {
     left: -20px;
     z-index: 100;
 }
-.center-vertical {
+.outer-hor-center {
+    width: 100%;
+    text-align: center;
+}
+.inner-hor-center {
+    display: inline-block;
+}
+.center-vertical { /* not working completely. Find better way. */
     position: relative;
     top: 50%;
     transform: translateY(50%);
 }
+.center-table {
+    display: table;
+    height: 100%;
+}
+.center-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.connect-row {
+    background: white;
+    height: 200px;
+}
 .social-button {
     height: 55px;
     width: 55px;
+    margin: 10px;
     text-align: center;
     -moz-border-radius:75px;
     -webkit-border-radius:75px;
     display: inline-block;
+}
+.facebook {
+    background: #3b5998;
+}
+.facebook:hover {
+    background: #466ab4;
+}
+.twitter {
+    background: #4099FF;
+}
+.twitter:hover {
+    background: #67aeff;
+}
+.instagram {
+    background: #517fa4;    
+}
+.instagram:hover {
+    background: #6892b4;
 }
 .icon {
     font-size:32px;
     line-height:55px;
 }
 .white {
+    color: white;
+    text-decoration: none;
+}
+.white:hover {
     color: white;
 }
