@@ -36,22 +36,24 @@ mc_field_headers,
 .inner-hor-center {
     display: inline-block;
 }
-.center-vertical { /* not working completely. Find better way. */
-    position: relative;
+.center-hor-vert-social,
+.center-hor-vert {
+    width: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     top: 50%;
-    transform: translateY(50%);
+    left: 50%;
+    resize: both;
+    overflow: auto;
 }
-.center-table {
-    display: table;
-    height: 100%;
-}
-.center-table-cell {
-    display: table-cell;
-    vertical-align: middle;
+.center-hor-vert-social {
+    transform: translate(-50%, 50%);
+    width: 100%;
+    text-align: center;
 }
 .connect-row {
     background: white;
-    height: 200px;
+    height: 250px;
     color: black;
 }
 .social-button {
