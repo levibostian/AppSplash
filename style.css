@@ -21,6 +21,7 @@ h1 {
 .description-header {
     font-size: 3em;
 }
+mc_field_headers,
 .description {
     font-size: 1.5em;
 }
@@ -51,6 +52,7 @@ h1 {
 .connect-row {
     background: white;
     height: 200px;
+    color: black;
 }
 .social-button {
     height: 55px;
