@@ -40,7 +40,7 @@
 @import "variables.less";
 @import "wells.less";
 
-@connect-row-height: 325px;
+@connect-row-md-height: 325px;
 @footer-row-height: 100px;
 
 @facebook-color: #3b5998;
@@ -129,7 +129,16 @@ mc_field_headers,
     color: black;
 }
 .connect-row-height {
-    height: @connect-row-height;
+    height: @connect-row-md-height - 100px;
+    @media (min-width: @screen-md-min) {
+        height: @connect-row-md-height;
+    }
+}
+.mailchimp-container {
+    padding-top: 0px;
+    @media (min-width: @screen-md-min) {
+        padding-top: 15%;
+    }
 }
 .footer-row {
     .connect-row;
