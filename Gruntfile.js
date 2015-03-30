@@ -16,18 +16,26 @@ module.exports = function(grunt) {
                 //banner: '<%= banner %>',
                 stripBanners: true
             },
-            dist: {
+            js: {
                 src: ['lib/<%= pkg.name %>.js'],
                 dest: 'dist/<%= pkg.name %>.js'
+            },
+            bootstrap: {
+                src: ['bower_components/bootstrap/js/*.js'],
+                dest: 'dist/bootstrap.js'
             }
         },
         uglify: {
             options: {
-                banner: '<%= banner %>'
+                //banner: '<%= banner %>'
             },
-            dist: {
-                src: '<%= concat.dist.dest %>',
+            js: {
+                src: '<%= concat.js.dest %>',
                 dest: 'dist/<%= pkg.name %>.min.js'
+            },
+            bootstrap: {
+                src: '<%= concat.bootstrap.dest %>',
+                dest: 'dist/bootstrap.min.js'
             }
         },
         jshint: {
@@ -59,7 +67,8 @@ module.exports = function(grunt) {
         less: {
             production: {
                 options: {
-                    paths: ["lib/css"]
+                    paths: ["lib/css", "bower_components/bootstrap/less"],
+                    compress: true
                 },
                 files: {
                     "style.css": "lib/less/style.less"
@@ -77,7 +86,7 @@ module.exports = function(grunt) {
             },
             less: {
                 files: 'lib/less/*.less',
-                tasks: ['less']
+                tasks: ['compile']
             }
         }
     });
@@ -91,6 +100,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
 
     // Default task.
-    grunt.registerTask('default', ['jshint', 'qunit', 'less', 'concat', 'uglify']);
+    grunt.registerTask('default', ['jshint', 'compile']);
+
+    grunt.registerTask('compile', ['less', 'concat', 'uglify']);
 
 };
