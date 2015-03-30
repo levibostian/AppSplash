@@ -98,18 +98,33 @@ h1 {
     vertical-align: middle;
 }
 .description-header {
-    font-size: 3em;
+    font-size: 2em;
+    @media(min-width: @screen-sm-min) {
+        font-size: 3em;
+    }
 }
 mc_field_headers,
 .description {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    @media(min-width: @screen-sm-min) {
+        font-size: 1.5em;
+    }
 }
 .image-center {
     display: block;
     margin: auto;
 }
-.app-screenshot-container {
+.app-screenshot {
     height: 500px;
+    @media(min-width: @screen-sm-min) {
+        height: 625px;
+    }
+}
+.app-screenshot-container {
+    height: 400px;
+    @media(min-width: @screen-sm-min) {
+        height: 500px;
+    }
     z-index: 100;
 }
 .outer-hor-center {

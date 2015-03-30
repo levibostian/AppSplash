@@ -33,7 +33,7 @@
                             </div><!-- row -->
                         </div><!-- col-md-7 -->
                         <div class="col-md-5 app-screenshot-container">
-                            <img class="image-center" alt="app screenshot" src="img/app-screenshot.png" height="625px"/>
+                            <img class="image-center app-screenshot" alt="app screenshot" src="img/app-screenshot.png"/>
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
