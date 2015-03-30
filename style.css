@@ -25,6 +25,10 @@ mc_field_headers,
 .description {
     font-size: 1.5em;
 }
+.image-center {
+    display: block;
+    margin: auto;
+}
 .app-screenshot-container {
     height: 500px;
     z-index: 100;
