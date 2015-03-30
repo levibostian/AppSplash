@@ -20,14 +20,14 @@
             <div class="row app-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-7" style="height: 500px;">
                             <div class="row">
                                 <img alt="app logo" src="img/app-logo.png" height="75px" width="75px"/>
                                 <h1 class="inline-text" style="padding-left: 10px;">App Name</h1>
                             </div><!-- row -->
 
-                            <div class="row">
-                                <div class="col-md-offset-1 col-md-11">
+                            <div class="row" style="height: 82%;">
+                                <div class="col-md-offset-1 col-md-11 center-div">
                                     <h2 class="description-header">App for people to do stuff.</h2>
                                     <p class="description">Dr. Jimmy Brungus forgot to do rockets. Hippie Joel tastes like cow bathroom. Not for horses. No lonely times just dreams you turkey. Stop, drop and roll bones made from stuff your muscles don't like. Check the expiration date used to love pruppets. </p>
                                 </div>

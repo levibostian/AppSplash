@@ -1,13 +1,19 @@
+html {
+    height: 100%;
+}
 body {
-    background-color: black;
+    background-color: white;
     color: white;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 h1 {
     font-size: 4em;
 }
-.website-header {
-    background-color: black;
+.center-div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .app-header {
     background-image: url('img/header-background.jpg');
