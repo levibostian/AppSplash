@@ -115,17 +115,28 @@ mc_field_headers,
     margin: auto;
 }
 .app-screenshot {
+    background: url("img/app-screenshot.png");
+    background-size: 206px 365px;
+    background-repeat: no-repeat;
+    background-position: 46px 69px;
     height: 500px;
+    z-index: 101;
     @media(min-width: @screen-sm-min) {
         height: 625px;
+        background: url("img/app-screenshot.png");
+        background-size: 257px 456px;
+        background-repeat: no-repeat;
+        background-position: 58px 87px;
+        z-index: 101;
     }
 }
 .app-screenshot-container {
     height: 400px;
+    z-index: 100;
     @media(min-width: @screen-sm-min) {
         height: 500px;
+        z-index: 100;
     }
-    z-index: 100;
 }
 .outer-hor-center {
     width: 100%;

@@ -12,6 +12,7 @@
         <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="style.css">
+        <script src="dist/app-splash.min.js"></script>
         <script src="dist/bootstrap.min.js"></script>
     </head>
     <body>
@@ -33,7 +34,7 @@
                             </div><!-- row -->
                         </div><!-- col-md-7 -->
                         <div class="col-md-5 app-screenshot-container">
-                            <img class="image-center app-screenshot" alt="app screenshot" src="img/app-screenshot.png"/>
+                          <img class="image-center app-screenshot"  src="img/app-screenshot-frame.png"/>
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
