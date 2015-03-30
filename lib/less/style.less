@@ -74,6 +74,15 @@ body {
 h1 {
     font-size: 4em;
 }
+.app-logo {
+    margin: 7px;
+}
+.app-name {
+    font-size: 3em;
+    @media (min-width: @screen-md-min) {
+        font-size: 4em;
+    }
+}
 .center-div {
     position: relative;
     top: 50%;
@@ -116,6 +125,8 @@ mc_field_headers,
     top: 50%;
     left: 50%;
     overflow: auto;
+    width: 100%;
+    text-align: center;
 }
 .center-hor-vert-social {
     .center-hor-vert;

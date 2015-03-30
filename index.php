@@ -21,8 +21,8 @@
                     <div class="row">
                         <div class="col-md-7" style="height: 500px;">
                             <div class="row">
-                                <img alt="app logo" src="img/app-logo.png" height="75px" width="75px"/>
-                                <h1 class="inline-text" style="padding-left: 10px;">App Name</h1>
+                                <img class="app-logo" alt="app logo" src="img/app-logo.png" height="75px" width="75px"/>
+                                <h1 class="inline-text app-name" style="padding-left: 10px;">App Name</h1>
                             </div><!-- row -->
 
                             <div class="row" style="height: 82%;">
