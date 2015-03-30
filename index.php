@@ -45,6 +45,13 @@
                 <div class="container" style="height: 100%;">
                     <div class="row" style="height: 100%;">
                         <div class="col-md-6" style="height: 100%;">
+                            <div class="center-div">
+                                <h2>Coming soon. <br/>
+                                    Get notified when app is released.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="height: 100%;">
 
                             <!-- Begin MailChimp Signup Form -->
                             <div id="mc_embed_signup" class="center-div">
@@ -79,27 +86,27 @@
                             
                         </div><!-- col-md-6 -->
                         
-                        <div class="col-md-6">
-                            <div class="center-hor-vert">
-                                <a href="#" class="white">
-                                    <div class="social-button facebook">
-                                        <i class="fa fa-facebook fa-4x icon"></i>
-                                    </div>
-                                </a>
+                        <!-- <div class="col-md-6">
+                        <!--     <div class="center-hor-vert">
+                        <!--         <a href="#" class="white">
+                        <!--             <div class="social-button facebook">
+                        <!--                 <i class="fa fa-facebook fa-4x icon"></i>
+                        <!--             </div>
+                        <!--         </a>
                                 
-                                <a href="#" class="white">
-                                    <div class="social-button twitter">
-                                        <i class="fa fa-twitter fa-4x icon"></i>
-                                    </div>
-                                </a>
+                        <!--         <a href="#" class="white">
+                        <!--             <div class="social-button twitter">
+                        <!--                 <i class="fa fa-twitter fa-4x icon"></i>
+                        <!--             </div>
+                        <!--         </a>
 
-                                <a href="#" class="white">
-                                    <div class="social-button instagram">
-                                        <i class="fa fa-instagram fa-4x icon"></i>
-                                    </div>
-                                </a>
-                            </div><!-- center-hor-vert -->
-                        </div><!-- col-md-offset-6 col-md-6 -->
+                        <!--         <a href="#" class="white">
+                        <!--             <div class="social-button instagram">
+                        <!--                 <i class="fa fa-instagram fa-4x icon"></i>
+                        <!--             </div>
+                        <!--         </a>
+                        <!--     </div><!-- center-hor-vert -->
+                        <!-- </div><!-- col-md-offset-6 col-md-6 -->
                     </div><!-- row -->
                 </div><!-- container -->
             </div><!-- row connect-row -->
