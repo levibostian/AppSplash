@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 body {
-    background-color: white;
+    background-color: #3f4752; 
     color: white;
     font-family: 'Roboto', sans-serif;
     height: 100%;
@@ -48,12 +48,10 @@ mc_field_headers,
 }
 .center-hor-vert-social,
 .center-hor-vert {
-    width: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
     left: 50%;
-    resize: both;
     overflow: auto;
 }
 .center-hor-vert-social {
@@ -61,10 +59,21 @@ mc_field_headers,
     width: 100%;
     text-align: center;
 }
+.footer-row,
 .connect-row {
     background: white;
-    height: 250px;
+    height: auto;
     color: black;
+}
+.connect-row-height {
+    height: 325px;
+}
+.footer-row {
+    background: #3f4752;
+    color: white;
+}
+.footer-row-height {
+    height: 100px;
 }
 .social-button {
     height: 55px;
@@ -99,8 +108,8 @@ mc_field_headers,
 }
 .white {
     color: white;
-    text-decoration: none;
 }
 .white:hover {
     color: white;
+    text-decoration: none;
 }

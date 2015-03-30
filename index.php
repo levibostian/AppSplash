@@ -37,21 +37,21 @@
                             <img class="image-center" alt="app screenshot" src="img/app-screenshot.png" height="625px"/>
                         </div>
                     </div><!-- row -->
-                </div>
-            </div>
+                </div><!-- container -->
+            </div><!-- row app-header -->
 
 
             <div class="row connect-row">
-                <div class="container" style="height: 100%;">
-                    <div class="row" style="height: 100%;">
-                        <div class="col-md-6" style="height: 100%;">
+                <div class="container" style="height: auto;">
+                    <div class="row" style="height: auto;">
+                        <div class="col-md-6 connect-row-height">
                             <div class="center-div">
                                 <h2>Coming soon. <br/>
                                     Get notified when app is released.
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-md-6" style="height: 100%;">
+                        <div class="col-md-6 connect-row-height">
 
                             <!-- Begin MailChimp Signup Form -->
                             <div id="mc_embed_signup" class="center-div" style="padding-top: 15%;">
@@ -84,32 +84,44 @@
                             </script>
                             <!--End mc_embed_signup-->
                             
-                        </div><!-- col-md-6 -->
-                        
-                        <!-- <div class="col-md-6">
-                        <!--     <div class="center-hor-vert">
-                        <!--         <a href="#" class="white">
-                        <!--             <div class="social-button facebook">
-                        <!--                 <i class="fa fa-facebook fa-4x icon"></i>
-                        <!--             </div>
-                        <!--         </a>
-                                
-                        <!--         <a href="#" class="white">
-                        <!--             <div class="social-button twitter">
-                        <!--                 <i class="fa fa-twitter fa-4x icon"></i>
-                        <!--             </div>
-                        <!--         </a>
-
-                        <!--         <a href="#" class="white">
-                        <!--             <div class="social-button instagram">
-                        <!--                 <i class="fa fa-instagram fa-4x icon"></i>
-                        <!--             </div>
-                        <!--         </a>
-                        <!--     </div><!-- center-hor-vert -->
-                        <!-- </div><!-- col-md-offset-6 col-md-6 -->
+                        </div><!-- col-md-->                              
                     </div><!-- row -->
                 </div><!-- container -->
             </div><!-- row connect-row -->
+
+            <div class="row footer-row">
+                <div class="container">
+                    <div class="row"><!-- try not to edit height here. makes social buttons align along top -->
+                        <div class="col-md-12">
+                            <div class="center-hor-vert" style="z-index: 150;">
+                                <a href="#" class="white">
+                                    <div class="social-button facebook">
+                                        <i class="fa fa-facebook fa-4x icon"></i>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="white">
+                                    <div class="social-button twitter">
+                                        <i class="fa fa-twitter fa-4x icon"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="white">
+                                    <div class="social-button instagram">
+                                        <i class="fa fa-instagram fa-4x icon"></i>
+                                    </div>
+                                </a>
+                            </div><!-- center-hor-vert -->
+                        </div><!-- col-md-offset-6 col-md-6 -->
+                    </div><!-- row -->
+
+                    <div class="row">
+                        <div class="col-md-12 footer-row-height">
+                            <!-- footer content here -->
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!-- row footer-row -->
         </div><!-- container-fluid -->
     </body>
 </html>
