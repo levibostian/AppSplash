@@ -54,7 +54,7 @@
                         <div class="col-md-6" style="height: 100%;">
 
                             <!-- Begin MailChimp Signup Form -->
-                            <div id="mc_embed_signup" class="center-div">
+                            <div id="mc_embed_signup" class="center-div" style="padding-top: 15%;">
                                 <form action="//levibostian.us10.list-manage.com/subscribe/post?u=7f489ab74730d111936a8515e&amp;id=e7c869cc60" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                     <div id="mc_embed_signup_scroll">
 	                                
