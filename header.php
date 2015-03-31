@@ -3,13 +3,14 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?php wp_title(''); ?></title>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/style.css">
+        
+        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" ></link> 
         <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/app-splash.min.js"></script>
         <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/bootstrap.min.js"></script>
         <?php wp_head(); ?>
