@@ -10,6 +10,18 @@ module.exports = function(grunt) {
                 '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
                 '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
                 ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+        wordpress_theme_banner: '/* \n' +
+                                'Theme Name: app-splash \n' +
+                                'Theme URI: \n' +
+                                'Author: Levi Bostian \n' +
+                                'Author URI: http://levibostian.com \n' +
+                                'Description: App-Splash is designed to create a splash page for a mobile app coming soon. Get a website for your app up and running prepared to take emails or direct to social media accounts with this quick, simple, mobile/desktop site. \n' +
+                                'Version: 1.0.0 \n' +
+                                'License: MIT \n' +
+                                'License URI: http://opensource.org/licenses/MIT \n' +
+                                'Tags: app, mobile, desktop, splash, email, social-media, bootstrap, coming-soon, easy, simple, mailchimp, responsive-layout \n' +
+                                'Text Domain: app-splash \n' +
+                                '*/',
         // Task configuration.
         concat: {
             options: {
@@ -27,7 +39,7 @@ module.exports = function(grunt) {
         },
         uglify: {
             options: {
-                //banner: '<%= banner %>'
+                banner: '<%= wordpress_theme_banner %>'
             },
             js: {
                 src: '<%= concat.js.dest %>',
@@ -68,7 +80,8 @@ module.exports = function(grunt) {
             production: {
                 options: {
                     paths: ["lib/css", "bower_components/bootstrap/less"],
-                    compress: true
+                    compress: false,
+                    banner: '<%= wordpress_theme_banner %>'
                 },
                 files: {
                     "style.css": "lib/less/style.less"
@@ -106,6 +119,6 @@ module.exports = function(grunt) {
     // Default task.
     grunt.registerTask('default', ['jshint', 'compile']);
 
-    grunt.registerTask('compile', ['less', 'concat', 'uglify']);
+    grunt.registerTask('compile', ['less']);
 
 };
