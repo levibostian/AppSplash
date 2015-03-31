@@ -9,10 +9,9 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 
-        <link rel="stylesheet" href="style.css">
-        <script src="dist/app-splash.min.js"></script>
-        <script src="dist/bootstrap.min.js"></script>
-
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/style.css">
+        <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/app-splash.min.js"></script>
+        <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/bootstrap.min.js"></script>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
@@ -22,7 +21,7 @@
                     <div class="row">
                         <div class="col-md-7" style="height: 500px;">
                             <div class="row">
-                                <img class="app-logo" alt="app logo" src="img/app-logo.png" height="75px" width="75px"/>
+                                <img class="app-logo" alt="app logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/app-logo.png" height="75px" width="75px"/>
                                 <h1 class="inline-text app-name" style="padding-left: 10px;"><?php bloginfo('name'); ?></h1>
                             </div><!-- row -->
 
@@ -34,7 +33,7 @@
                             </div><!-- row -->
                         </div><!-- col-md-7 -->
                         <div class="col-md-5 app-screenshot-container">
-                            <img class="image-center app-screenshot"  src="img/app-screenshot-frame.png"/>
+                            <img class="image-center app-screenshot"  src="<?php echo esc_url(get_template_directory_uri()); ?>/img/app-screenshot-frame.png"/>
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
