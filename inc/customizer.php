@@ -3,6 +3,7 @@
 add_action( 'customize_register', 'appsplash_customize_register' );
 
 define('GOOGLE_ANALYTICS_DEFAULT', 'UA-00000000-0');
+define('MAILCHIMP_DEFAULT', '//examplewebsite.us10.list-manage.com/subscribe/post?u=7f489ab74730d111936a8515e&amp;id=e7c869cc60');
 
 function appsplash_customize_register($wp_customize) {
     
@@ -112,6 +113,20 @@ function appsplash_customize_register($wp_customize) {
         'section' => 'appsplash_website_information',
         'settings' => 'appsplash_google_analytics',
         'type' => 'text',
+    ));
+
+    // Mailchimp path.
+
+    $wp_customize->add_setting('appsplash_mailchimp_path', array(
+        'default' => MAILCHIMP_DEFAULT,
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control( 'appsplash_mailchimp_path_control', array( 
+        'label'      => __( 'Mailchimp form path.', 'appsplash' ),
+        'section'    => 'appsplash_website_information',
+        'settings'   => 'appsplash_mailchimp_path',
+        'type'       => 'textarea',
     ));
     
 }
