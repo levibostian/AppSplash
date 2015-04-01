@@ -4,8 +4,7 @@
         <div class="row" style="height: auto;">
             <div class="col-md-6 connect-row-height">
                 <div class="center-div">
-                    <h2>Coming soon. <br/>
-                        Get notified when app is released.
+                    <h2><?php echo nl2br(get_theme_mod('appsplash_coming_soon_message')); ?>
                     </h2>
                 </div>
             </div>

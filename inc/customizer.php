@@ -149,6 +149,30 @@ function appsplash_customize_register($wp_customize) {
 
     // Mailchimp path.
 
+   
+    // Section: Mailchimp info.
+
+    $wp_customize->add_section( 'appsplash_mailchimp_information', array(
+        'title'          => __( 'MailChimp information', 'appsplash' ),
+        'priority'       => 37,
+    ));
+
+    // Coming soon message.
+
+    $wp_customize->add_setting('appsplash_coming_soon_message', array(
+        'default' => "Coming soon. \nGet notified when app is released.",
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control('appsplash_coming_soon_message_control', array(
+        'label' => __('MailChimp message', 'appsplash'),
+        'section' => 'appsplash_mailchimp_information',
+        'settings' => 'appsplash_coming_soon_message',
+        'type' => 'textarea',
+    ));
+
+    // Mailchimp path.
+
     $wp_customize->add_setting('appsplash_mailchimp_path', array(
         'default' => MAILCHIMP_DEFAULT,
         'transport' => 'refresh',
@@ -156,7 +180,7 @@ function appsplash_customize_register($wp_customize) {
 
     $wp_customize->add_control( 'appsplash_mailchimp_path_control', array( 
         'label'      => __( 'Mailchimp form path.', 'appsplash' ),
-        'section'    => 'appsplash_website_information',
+        'section'    => 'appsplash_mailchimp_information',
         'settings'   => 'appsplash_mailchimp_path',
         'type'       => 'textarea',
     ));
