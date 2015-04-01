@@ -52,7 +52,38 @@ function appsplash_customize_register($wp_customize) {
         'settings'   => 'appsplash_app_description',
         'type'       => 'textarea',
     ));
-    
+
+    // App screenshot.
+
+    $wp_customize->add_setting('appsplash_app_screenshot', array(
+        'default' => (esc_url(get_template_directory_uri()) . '/img/app-screenshot.png'),
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'appsplash_app_screenshot_control',
+            array (
+                'label' => __('App screenshot (2MB max size.)', 'appsplash'),
+                'section' => 'appsplash_app_information',
+                'settings' => 'appsplash_app_screenshot',
+            )
+        )
+    );
+            
 }
 
+function appsplash_stick_custom_css_in_header() {
 ?>
+    <style type="text/css">
+     .app-screenshot {
+         background-image: url("<?php echo get_theme_mod('appsplash_app_screenshot'); ?>");
+     }
+    </style>
+<?php
+}
+
+add_action('wp_head', 'appsplash_stick_custom_css_in_header');
+?>
+    
