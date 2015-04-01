@@ -5,6 +5,38 @@ add_action( 'customize_register', 'appsplash_customize_register' );
 define('GOOGLE_ANALYTICS_DEFAULT', 'UA-00000000-0');
 define('MAILCHIMP_DEFAULT', '//examplewebsite.us10.list-manage.com/subscribe/post?u=7f489ab74730d111936a8515e&amp;id=e7c869cc60');
 
+class SocialMedia {
+    public $name; // used for font-awesome and potentially other times.
+    public $setting;
+    public $control;
+
+    public function __construct($name) {
+        $this->name = $name;
+        $this->setting = 'appsplash_social_media_' . $this->name;
+        $this->control = $this->setting . '_control';
+    }
+
+    public function formal_name() {
+        return ucwords(str_replace('-', ' ', $this->name));
+    }
+}
+
+function create_social_media_setting_and_control($wp_customize, $social_media_obj) {
+    $wp_customize->add_setting($social_media_obj->setting, array(
+        'default' => DEFAULT_LINK,
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control($social_media_obj->control, array(
+        'label' => __($social_media_obj->formal_name() . ' URL', 'appsplash'),
+        'section' => 'appsplash_social_media',
+        'settings' => $social_media_obj->setting,
+        'type' => 'text',
+    ));
+}
+
+define('DEFAULT_LINK', '');
+
 function appsplash_customize_register($wp_customize) {
     
     // Section: App information section.
@@ -128,6 +160,25 @@ function appsplash_customize_register($wp_customize) {
         'settings'   => 'appsplash_mailchimp_path',
         'type'       => 'textarea',
     ));
+
+    
+    // Section: Social media.
+
+    $wp_customize->add_section( 'appsplash_social_media', array(
+        'title'          => __( 'Social media', 'appsplash' ),
+        'priority'       => 36,
+    ));
+
+    // Create social media settings and controls.
+
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('facebook'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('twitter'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('instagram'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('youtube'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('tumblr'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('google-plus'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('github'));
+    create_social_media_setting_and_control($wp_customize, new SocialMedia('pinterest'));
     
 }
 

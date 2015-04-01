@@ -1,56 +1,40 @@
+<?php 
+
+// sees if setting for social media platform set.
+function is_social_media_valid($setting) {
+    return ((get_theme_mod($setting) != DEFAULT_LINK) && (get_theme_mod($setting) != " "));
+}
+
+function get_social_media_link_if_valid($social_media_obj) {
+    if (is_social_media_valid($social_media_obj->setting)) {
+        return '<a href="' . get_theme_mod($social_media_obj->setting) . '" class="social-button-a-link" target="_blank">' .
+               '<div class="social-button ' . $social_media_obj->name . '">' .
+               '<i class="fa fa-' . $social_media_obj->name . ' fa-4x icon"></i>' .
+               '</div>' .
+               '</a>';
+    }
+}
+?>
+
+
 <div class="row footer-row">
                 <div class="container">
                     <div class="row"><!-- try not to edit height here. makes social buttons align along top -->
                         <div class="col-md-12">
                             <div class="center-hor-vert" style="z-index: 150;">
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button facebook">
-                                        <i class="fa fa-facebook fa-4x icon"></i>
-                                    </div>
-                                </a>
+                                <?php 
                                 
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button twitter">
-                                        <i class="fa fa-twitter fa-4x icon"></i>
-                                    </div>
-                                </a>
+                                echo get_social_media_link_if_valid(new SocialMedia('facebook'));
+                                echo get_social_media_link_if_valid(new SocialMedia('twitter'));
+                                echo get_social_media_link_if_valid(new SocialMedia('instagram'));
+                                echo get_social_media_link_if_valid(new SocialMedia('youtube'));
+                                echo get_social_media_link_if_valid(new SocialMedia('tumblr'));
+                                echo get_social_media_link_if_valid(new SocialMedia('google-plus'));
+                                echo get_social_media_link_if_valid(new SocialMedia('github'));
+                                echo get_social_media_link_if_valid(new SocialMedia('pinterest'));
 
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button instagram">
-                                        <i class="fa fa-instagram fa-4x icon"></i>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button youtube">
-                                        <i class="fa fa-youtube-play fa-4x icon"></i>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button tumblr">
-                                        <i class="fa fa-tumblr fa-4x icon"></i>
-                                    </div>
-                                </a>
- 
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button google-plus">
-                                        <i class="fa fa-google-plus fa-4x icon"></i>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button github">
-                                        <i class="fa fa-github fa-4x icon"></i>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="social-button-a-link">
-                                    <div class="social-button pinterest">
-                                        <i class="fa fa-pinterest fa-4x icon"></i>
-                                    </div>
-                                </a>
-                               
+                                ?>
+                                                               
                             </div><!-- center-hor-vert -->
                         </div><!-- col-md-offset-6 col-md-6 -->
                     </div><!-- row -->
