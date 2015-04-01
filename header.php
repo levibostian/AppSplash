@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="col-md-7" style="height: 500px;">
                             <div class="row">
-                                <img class="app-logo" alt="app logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/app-logo.png" height="75px" width="75px"/>
+                                <img class="app-logo" alt="app logo" src="<?php echo get_theme_mod('appsplash_app_logo'); ?>"/>
                                 <h1 class="inline-text app-name" style="padding-left: 10px;"><?php echo get_theme_mod('appsplash_app_name'); ?></h1>
                             </div><!-- row -->
 

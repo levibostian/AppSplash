@@ -25,6 +25,25 @@ function appsplash_customize_register($wp_customize) {
         'type' => 'text',
     ));
 
+    // App logo.
+
+    $wp_customize->add_setting('appsplash_app_logo', array(
+        'default' => (esc_url(get_template_directory_uri()) . '/img/app-logo.png'),
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'appsplash_app_logo_control',
+            array (
+                'label' => __('App logo (2MB max size.)', 'appsplash'),
+                'section' => 'appsplash_app_information',
+                'settings' => 'appsplash_app_logo',
+            )
+        )
+    );
+
     // App description header
     
     $wp_customize->add_setting('appsplash_app_description_header', array(
@@ -74,6 +93,8 @@ function appsplash_customize_register($wp_customize) {
             
 }
 
+// If there are properties changed here in settings that change values in .css, need to put it here.
+// else, go ahead and put it in the .php file with get_them_mod().
 function appsplash_stick_custom_css_in_header() {
 ?>
     <style type="text/css">
