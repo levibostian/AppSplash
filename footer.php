@@ -20,6 +20,37 @@
                                         <i class="fa fa-instagram fa-4x icon"></i>
                                     </div>
                                 </a>
+
+                                <a href="#" class="social-button-a-link">
+                                    <div class="social-button youtube">
+                                        <i class="fa fa-youtube-play fa-4x icon"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="social-button-a-link">
+                                    <div class="social-button tumblr">
+                                        <i class="fa fa-tumblr fa-4x icon"></i>
+                                    </div>
+                                </a>
+ 
+                                <a href="#" class="social-button-a-link">
+                                    <div class="social-button google-plus">
+                                        <i class="fa fa-google-plus fa-4x icon"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="social-button-a-link">
+                                    <div class="social-button github">
+                                        <i class="fa fa-github fa-4x icon"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="social-button-a-link">
+                                    <div class="social-button pinterest">
+                                        <i class="fa fa-pinterest fa-4x icon"></i>
+                                    </div>
+                                </a>
+                               
                             </div><!-- center-hor-vert -->
                         </div><!-- col-md-offset-6 col-md-6 -->
                     </div><!-- row -->
