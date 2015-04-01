@@ -2,6 +2,8 @@
 
 add_action( 'customize_register', 'appsplash_customize_register' );
 
+define('GOOGLE_ANALYTICS_DEFAULT', 'UA-00000000-0');
+
 function appsplash_customize_register($wp_customize) {
     
     // Section: App information section.
@@ -90,7 +92,28 @@ function appsplash_customize_register($wp_customize) {
             )
         )
     );
-            
+
+    // Section: Website information.
+
+    $wp_customize->add_section( 'appsplash_website_information', array(
+        'title'          => __( 'Website information', 'appsplash' ),
+        'priority'       => 36,
+    ));
+
+    // Google analytics.
+
+    $wp_customize->add_setting('appsplash_google_analytics', array(
+        'default' => GOOGLE_ANALYTICS_DEFAULT,
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control('appsplash_google_analytics_control', array(
+        'label' => __('Google Analytics Tracking ID', 'appsplash'),
+        'section' => 'appsplash_website_information',
+        'settings' => 'appsplash_google_analytics',
+        'type' => 'text',
+    ));
+    
 }
 
 // If there are properties changed here in settings that change values in .css, need to put it here.
@@ -106,5 +129,27 @@ function appsplash_stick_custom_css_in_header() {
 }
 
 add_action('wp_head', 'appsplash_stick_custom_css_in_header');
+
+// Add analytics to website 
+function appsplash_add_analytics() {
 ?>
-    
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', '<?php echo get_theme_mod('appsplash_google_analytics');?>', 'auto');
+     ga('send', 'pageview');
+    </script>
+
+<?php
+}
+
+$user_chosen_analytics_code = get_theme_mod('appsplash_google_analytics');
+if ($user_chosen_analytics_code != GOOGLE_ANALYTICS_DEFAULT) {
+    add_action('wp_head', 'appsplash_add_analytics');
+}
+
+?>
+
