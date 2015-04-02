@@ -2,7 +2,8 @@
 
 // sees if setting for social media platform set.
 function is_social_media_valid($setting) {
-    return ((get_theme_mod($setting) != DEFAULT_LINK) && (get_theme_mod($setting) != " "));
+    $setting = trim($setting);
+    return ((get_theme_mod($setting) != DEFAULT_LINK) && (get_theme_mod($setting) != ""));
 }
 
 function get_social_media_link_if_valid($social_media_obj) {

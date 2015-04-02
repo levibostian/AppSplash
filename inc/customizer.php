@@ -249,8 +249,8 @@ function appsplash_add_analytics() {
 <?php
 }
 
-$user_chosen_analytics_code = get_theme_mod('appsplash_google_analytics');
-if ($user_chosen_analytics_code != GOOGLE_ANALYTICS_DEFAULT) {
+$user_chosen_analytics_code = trim(get_theme_mod('appsplash_google_analytics'));
+if (($user_chosen_analytics_code != GOOGLE_ANALYTICS_DEFAULT) && ($user_chosen_analytics_code != "")) {
     add_action('wp_head', 'appsplash_add_analytics');
 }
 
