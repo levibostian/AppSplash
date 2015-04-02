@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                 ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
         wordpress_theme_banner: '/* \n' +
                                 'Theme Name: app-splash \n' +
-                                'Theme URI: \n' +
+                                'Theme URI: http://levibostian.com/app-splash \n' +
                                 'Author: Levi Bostian \n' +
                                 'Author URI: http://levibostian.com \n' +
                                 'Description: App-Splash is designed to create a splash page for a mobile app coming soon. Get a website for your app up and running prepared to take emails or direct to social media accounts with this quick, simple, mobile/desktop site. \n' +
