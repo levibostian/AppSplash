@@ -53,6 +53,24 @@
                 <div class="col-md-12">
                     <h2>Documentation</h2>
                     <p>AppSplash is easy. Install it like you would any other WordPress theme. Then all customizing occurs in the Theme Customizer of Wordpress.  <strong>No plugins or tools necessary</strong>.</p>
+                    <p>I should note that this theme uses <a href="https://mailchimp.com">MailChimp</a> for email address collection. MailChimp is a popular free email marketing solution. The plan is to give the user the ability to change this to app download links or something but that is not the case right now. In order for your website to not be broken, you need to have a MailChimp account.</p>
+                    <h4>Installing MailChimp integration.</h4>
+                    <p>In order to get MailChimp up and running with this theme, you need to...
+                        
+                        <ol>
+                            <li><a href="https://login.mailchimp.com/signup">Create an account.</a></li>
+                            <li><a href="http://kb.mailchimp.com/lists/growth/create-a-new-list">Create a MailChimp list</a> used to collect the email addresses with.</li>
+                            <li>Open up the list and go to the "Signup forms" page.</li>
+                            <li>Go to the "Embedded forms" page.</li>
+                            <li>In the bottom right part of the page, you should see a box that says "Copy/paste onto your site". Inside of this box you will find text that reads:
+                                <pre>
+                                    <code>
+        &lt;form action="//example.us10.list-manage.com/subscribe/post?23942=3948398&amp;id2093"&gt;
+    </code>
+</pre>
+or something like that. Copy just the part inside of the double quotes and paste that into the Theme Customizer option "MailChimp information".</li>
+                        </ol>
+                    </p>
                 </div>
             </div>
 
