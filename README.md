@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/levibostian/AppSplash.png?label=ready&title=Ready)](https://waffle.io/levibostian/app-splash)
+[![Stories in Ready](https://badge.waffle.io/levibostian/AppSplash.png?label=ready&title=Ready)](https://waffle.io/levibostian/AppSplash)
 # AppSplash
 WordPress theme designed for apps coming soon.
 
@@ -46,4 +46,4 @@ I want to make sure this project is easy to get up and running.*
 ### Contributing
 
 First make sure and run the Install directions in this README to get the dependencies, tools, and site compiling.
-Check out the [issues](https://github.com/levibostian/AppSplash/issues) or the [waffle.io board](https://waffle.io/levibostian/app-splash) to view what needs to be done. Go ahead and jump on an item and get to work. Pull requests are always welcome!
+Check out the [issues](https://github.com/levibostian/AppSplash/issues) or the [waffle.io board](https://waffle.io/levibostian/AppSplash) to view what needs to be done. Go ahead and jump on an item and get to work. Pull requests are always welcome!
