@@ -22,14 +22,14 @@
                     <div class="row">
                         <div class="col-md-7" style="height: 500px;">
                             <div class="row">
-                                <img class="app-logo" alt="app logo" src="<?php echo get_theme_mod('appsplash_app_logo'); ?>"/>
-                                <h1 class="inline-text app-name" style="padding-left: 10px;"><?php echo get_theme_mod('appsplash_app_name'); ?></h1>
+                                <img class="app-logo" alt="app logo" src="<?php echo get_theme_mod('appsplash_app_logo', DEFAULT_APP_LOGO); ?>"/>
+                                <h1 class="inline-text app-name" style="padding-left: 10px;"><?php echo get_theme_mod('appsplash_app_name', DEFAULT_APP_NAME); ?></h1>
                             </div><!-- row -->
 
                             <div class="row" style="height: 82%;">
                                 <div class="col-md-offset-1 col-md-11 center-div">
-                                    <h2 class="description-header"><?php echo get_theme_mod('appsplash_app_description_header'); ?></h2>
-                                    <p class="description"><?php echo get_theme_mod('appsplash_app_description'); ?> </p>
+                                    <h2 class="description-header"><?php echo get_theme_mod('appsplash_app_description_header', DEFAULT_APP_DESCRIPTION_HEADER); ?></h2>
+                                    <p class="description"><?php echo get_theme_mod('appsplash_app_description', DEFAULT_APP_DESCRIPTION); ?> </p>
                                 </div>
                             </div><!-- row -->
                         </div><!-- col-md-7 -->

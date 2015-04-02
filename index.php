@@ -4,7 +4,7 @@
         <div class="row" style="height: auto;">
             <div class="col-md-6 connect-row-height">
                 <div class="center-div">
-                    <h2><?php echo nl2br(get_theme_mod('appsplash_coming_soon_message')); ?>
+                    <h2><?php echo nl2br(get_theme_mod('appsplash_coming_soon_message', DEFAULT_COMING_SOON_MESSAGE)); ?>
                     </h2>
                 </div>
             </div>
@@ -24,7 +24,7 @@
 	                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_7f489ab74730d111936a8515e_e7c869cc60" tabindex="-1" value=""></div>
                             <div class="clear">
-                                <input type="submit" value="<?php echo get_theme_mod('appsplash_mailchimp_submit_button'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                <input type="submit" value="<?php echo get_theme_mod('appsplash_mailchimp_submit_button', DEFAULT_MAILCHIMP_SUBMIT_BUTTON); ?>" name="subscribe" id="mc-embedded-subscribe" class="button">
                             </div>
                         </div>
                     </form>

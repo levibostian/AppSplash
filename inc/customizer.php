@@ -5,6 +5,14 @@ add_action( 'customize_register', 'appsplash_customize_register' );
 define('GOOGLE_ANALYTICS_DEFAULT', 'UA-00000000-0');
 define('MAILCHIMP_DEFAULT', '//examplewebsite.us10.list-manage.com/subscribe/post?u=7f489ab74730d111936a8515e&amp;id=e7c869cc60');
 
+define('DEFAULT_APP_LOGO', get_template_directory_uri() . '/img/app-logo.png');
+define('DEFAULT_APP_NAME', 'App Name');
+define('DEFAULT_APP_DESCRIPTION_HEADER', 'App for people to do stuff.');
+define('DEFAULT_APP_DESCRIPTION', 'Dr. Jimmy Brungus forgot to do rockets. Hippie Joel tastes like cow bathroom. Not for horses. No lonely times just dreams you turkey. Stop, drop and roll bones made from stuff your muscles don\'t like. Check the expiration date used to love pruppets.');
+define('DEFAULT_APP_SCREENSHOT', get_template_directory_uri() . '/img/app-screenshot.png');
+define('DEFAULT_MAILCHIMP_SUBMIT_BUTTON', 'Notify');
+define('DEFAULT_COMING_SOON_MESSAGE', "Coming soon. \nGet notified when app is released.");
+
 class SocialMedia {
     public $name; // used for font-awesome and potentially other times.
     public $setting;
@@ -49,7 +57,7 @@ function appsplash_customize_register($wp_customize) {
     // App name.
 
     $wp_customize->add_setting('appsplash_app_name', array(
-        'default' => 'App Name',
+        'default' => DEFAULT_APP_NAME,
         'transport' => 'refresh',
     ));
 
@@ -63,7 +71,7 @@ function appsplash_customize_register($wp_customize) {
     // App logo.
 
     $wp_customize->add_setting('appsplash_app_logo', array(
-        'default' => (esc_url(get_template_directory_uri()) . '/img/app-logo.png'),
+        'default' => (esc_url(get_template_directory_uri()) . DEFAULT_APP_LOGO),
         'transport' => 'refresh',
     ));
 
@@ -82,7 +90,7 @@ function appsplash_customize_register($wp_customize) {
     // App description header
     
     $wp_customize->add_setting('appsplash_app_description_header', array(
-        'default' => 'App for people to do stuff.',
+        'default' => DEFAULT_APP_DESCRIPTION_HEADER,
         'transport' => 'refresh',
     ));
 
@@ -96,7 +104,7 @@ function appsplash_customize_register($wp_customize) {
     // App description.
 
     $wp_customize->add_setting('appsplash_app_description', array(
-        'default' => 'Dr. Jimmy Brungus forgot to do rockets. Hippie Joel tastes like cow bathroom. Not for horses. No lonely times just dreams you turkey. Stop, drop and roll bones made from stuff your muscles don\'t like. Check the expiration date used to love pruppets.',
+        'default' => DEFAULT_APP_DESCRIPTION,
         'transport' => 'refresh',
     ));
 
@@ -110,7 +118,7 @@ function appsplash_customize_register($wp_customize) {
     // App screenshot.
 
     $wp_customize->add_setting('appsplash_app_screenshot', array(
-        'default' => (esc_url(get_template_directory_uri()) . '/img/app-screenshot.png'),
+        'default' => (esc_url(get_template_directory_uri()) . DEFAULT_APP_SCREENSHOT),
         'transport' => 'refresh',
     ));
 
@@ -160,7 +168,7 @@ function appsplash_customize_register($wp_customize) {
     // Coming soon message.
 
     $wp_customize->add_setting('appsplash_coming_soon_message', array(
-        'default' => "Coming soon. \nGet notified when app is released.",
+        'default' => DEFAULT_COMING_SOON_MESSAGE,
         'transport' => 'refresh',
     ));
 
@@ -225,7 +233,7 @@ function appsplash_stick_custom_css_in_header() {
 ?>
     <style type="text/css">
      .app-screenshot {
-         background-image: url("<?php echo get_theme_mod('appsplash_app_screenshot'); ?>");
+         background-image: url("<?php echo get_theme_mod('appsplash_app_screenshot', DEFAULT_APP_SCREENSHOT); ?>");
      }
     </style>
 <?php
