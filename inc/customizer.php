@@ -185,6 +185,19 @@ function appsplash_customize_register($wp_customize) {
         'type'       => 'textarea',
     ));
 
+    // Mailchimp email form submit button
+
+    $wp_customize->add_setting('appsplash_mailchimp_submit_button', array(
+        'default' => 'Notify',
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control( 'appsplash_mailchimp_submit_button_control', array( 
+        'label'      => __( 'Mailchimp submit button text.', 'appsplash' ),
+        'section'    => 'appsplash_mailchimp_information',
+        'settings'   => 'appsplash_mailchimp_submit_button',
+        'type'       => 'text',
+    ));
     
     // Section: Social media.
 
