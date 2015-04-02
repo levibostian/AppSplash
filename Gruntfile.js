@@ -109,7 +109,7 @@ module.exports = function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'latest.zip'
+                    archive: 'AppSplash.zip'
                 },
                 files: [
                     {src: ['img/*'], dest: ''},

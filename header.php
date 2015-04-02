@@ -17,7 +17,7 @@
     </head>
     <body <?php body_class(); ?>>
         <div class="container-fluid">
-            <div class="row app-header">
+            <div class="row site-app-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7" style="height: 500px;">
@@ -38,4 +38,4 @@
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
-            </div><!-- row app-header -->
+            </div><!-- row site-ap-header -->
