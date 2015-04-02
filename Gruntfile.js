@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                                 'Author: Levi Bostian \n' +
                                 'Author URI: http://levibostian.com \n' +
                                 'Description: AppSplash is designed to create a splash page for a mobile app coming soon. Get a website for your app up and running prepared to take emails or direct to social media accounts with this quick, simple, mobile/desktop site. \n' +
-                                'Version: 1.0.0 \n' +
+                                'Version: 1.0.1 \n' +
                                 'License: MIT \n' +
                                 'License URI: http://opensource.org/licenses/MIT \n' +
                                 'Tags: app, mobile, desktop, splash, email, social-media, bootstrap, coming-soon, easy, simple, mailchimp, responsive-layout \n' +
