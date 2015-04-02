@@ -11,7 +11,7 @@
         <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
         
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" ></link> 
-        <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/app-splash.min.js"></script>
+        <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/AppSplash.min.js"></script>
         <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/bootstrap.min.js"></script>
         <?php wp_head(); ?>
     </head>

@@ -1,5 +1,5 @@
 {
-  "name": "app-splash",
+  "name": "AppSplash",
   "version": "1.0.0",
   "description": "WordPress theme designed for apps coming soon",
   "author": "Levi Bostian <levi.bostian@gmail.com>",
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/levibostian/app-splash"
+    "url": "https://github.com/levibostian/AppSplash"
   },
   "bugs": {
-    "url": "https://github.com/levibostian/app-splash/issues"
+    "url": "https://github.com/levibostian/AppSplash/issues"
   },
   "license": "MIT",
   "engines": {

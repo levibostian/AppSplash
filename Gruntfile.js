@@ -11,16 +11,16 @@ module.exports = function(grunt) {
                 '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
                 ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
         wordpress_theme_banner: '/* \n' +
-                                'Theme Name: app-splash \n' +
-                                'Theme URI: http://levibostian.com/app-splash \n' +
+                                'Theme Name: AppSplash \n' +
+                                'Theme URI: http://levibostian.com/AppSplash \n' +
                                 'Author: Levi Bostian \n' +
                                 'Author URI: http://levibostian.com \n' +
-                                'Description: App-Splash is designed to create a splash page for a mobile app coming soon. Get a website for your app up and running prepared to take emails or direct to social media accounts with this quick, simple, mobile/desktop site. \n' +
+                                'Description: AppSplash is designed to create a splash page for a mobile app coming soon. Get a website for your app up and running prepared to take emails or direct to social media accounts with this quick, simple, mobile/desktop site. \n' +
                                 'Version: 1.0.0 \n' +
                                 'License: MIT \n' +
                                 'License URI: http://opensource.org/licenses/MIT \n' +
                                 'Tags: app, mobile, desktop, splash, email, social-media, bootstrap, coming-soon, easy, simple, mailchimp, responsive-layout \n' +
-                                'Text Domain: app-splash \n' +
+                                'Text Domain: appsplash \n' +
                                 '*/',
         // Task configuration.
         concat: {
