@@ -1,11 +1,11 @@
 {
   "name": "app-splash",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/levibostian/app-splash",
   "authors": [
     "Levi Bostian"
   ],
-  "description": "Wordpress theme to create a splash page website for a mobile app.",
+  "description": "WordPress theme designed for apps coming soon.",
   "keywords": [
     "wordpress",
     "app",
