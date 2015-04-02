@@ -105,7 +105,21 @@ module.exports = function(grunt) {
                 files: 'lib/js/*.js',
                 tasks: ['compile']
             }
-        }
+        },
+        compress: {
+            main: {
+                options: {
+                    archive: 'latest.zip'
+                },
+                files: [
+                    {src: ['img/*'], dest: ''},
+                    {src: ['inc/*'], dest: ''},
+                    {src: ['dist/*.min.js'], dest: ''},
+                    {src: ['style.css', 'footer.php', 'header.php', 'index.php', 'functions.php'], dest: ''},
+                    {src: ['LICENSE', "README.md", 'screenshot.png'], dest: ''}
+                ]
+            }
+        }  
     });
 
     // These plugins provide necessary tasks.
@@ -115,10 +129,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
     // Default task.
     grunt.registerTask('default', ['jshint', 'compile']);
 
     grunt.registerTask('compile', ['less']);
+    grunt.registerTask('js-compile', ['concat', 'uglify']);
+    grunt.registerTask('wordpress-release', ['js-compile', 'compile', 'compress']);
 
 };
